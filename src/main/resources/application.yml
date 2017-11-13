@@ -8,9 +8,17 @@ spring:
 server:
   port: 5003
   
+zuul:
+  routes:
+    robot-on-mars:
+      url: http://31.220.55.236:8090
+    st-product:
+      path: /st-product/api/**
+      serviceId: st-product              
+  
 eureka:
   instance:
-    hostname: localhost
+    hostname: 31.220.55.236
     port: 5002
   client:
     registerWithEureka: true
