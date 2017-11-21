@@ -14,7 +14,11 @@ zuul:
       url: http://31.220.55.236:8090
     st-product:
       path: /st-product/api/**
-      serviceId: st-product              
+      serviceId: st-product        
+    st-customer:
+      url: http://31.220.55.236:6002
+    st-purchase-order:
+      url: http://31.220.55.236:6003      
   
 eureka:
   instance:
